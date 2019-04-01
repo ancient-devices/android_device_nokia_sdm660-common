@@ -201,6 +201,12 @@ vendor.video.disable.ubwc=1
 # Time
 persist.vendor.delta_time.enable=true
 
+# HEH filename encryption is being dropped
+ro.crypto.volume.filenames_mode=aes-256-cts
+
+# Watchdog
+ro.hw_timeout_multiplier=3
+
 # Wi-Fi
 ro.boot.wificountrycode=US
 
