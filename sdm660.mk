@@ -346,6 +346,10 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
     $(COMMON_PATH)/configs/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
 
+#remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Radio
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.4 \
