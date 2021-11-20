@@ -15,7 +15,6 @@
 #
 
 BOARD_VENDOR := nokia
-COMMON_PATH := device/xiaomi/sdm660-common
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := sdm660
@@ -97,6 +96,7 @@ BOARD_KERNEL_CMDLINE := \
     msm_rtb.filter=0x37 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 sched_enable_hmp=1 sched_enable_power_aware=1 \
     service_locator.enable=1 swiotlb=1 androidboot.configfs=true androidboot.usbcontroller=a800000.dwc3 \
     loop.max_part=7
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE := 4096
 TARGET_KERNEL_SOURCE := kernel/nokia/sdm660
