@@ -22,6 +22,7 @@ TARGET_NO_BOOTLOADER := true
 
 
 COMMON_PATH := device/nokia/sdm660-common
+SELINUX_IGNORE_NEVERALLOWS=true
 
 # Architecture
 TARGET_ARCH := arm64
