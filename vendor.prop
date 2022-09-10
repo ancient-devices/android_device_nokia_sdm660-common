@@ -131,6 +131,11 @@ ro.charger.enable_suspend=true
 # Dalvik dex2oat
 dalvik.vm.dex2oat64.enabled=true
 
+# Display
+debug.renderengine.backend=skiaglthreaded
+vendor.display.disable_scaler=1
+renderthread.skia.reduceopstasksplitting=true
+
 # DRM
 drm.service.enabled=true
 ro.com.widevine.cachesize=16777216
